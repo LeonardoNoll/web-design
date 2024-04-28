@@ -1,13 +1,20 @@
 {
   "name": "web-design",
   "version": "1.0.0",
-  "description": "",
+  "description": "demonstracao de talwind css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "a"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "web-design"
+  },
+  "keywords": [
+    "talwind",
+    "css"
+  ],
+  "author": "Leonardo Noll Cruz",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.3"
