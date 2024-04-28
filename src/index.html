@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Tailwind CSS</title>
 </head>
-<body class="bg-slate-800">
-    <div class="flex-row justify-center items-center border-solid border-4 border-black-900 ">
-        <img src="/assets/Tailwind CSS.png" alt="Logo Tailwind Css" class="h-20 w-auto">
-        <h1 class="text-white font-bold flex border-4">Tailwind CSS</h1>
-    </div>
+<body class="bg-fixed" style="background-image: url(/assets/diamond-sunset.png);">
+    <main class="max-w-xl h-96 rounded-2xl mx-auto mt-7 border-2">
+        <div class="bg-slate-800 w-2/3 p-2 flex flex-col justify-center items-center gap-1 mx-auto rounded-md">
+            <img src="/assets/Tailwind CSS.png" alt="Logo Tailwind Css" class="h-20">
+            <h1 class="text-gray-100 font-extrabold text-xl">Tailwind CSS</h1>
+            <h2 class="text-gray-100 font-normal text-sm">facilitação da construção de websites</h2>
+        </div>
+        <div class="w-max h-52 flex justify-center gap-4 items-center border-2 mx-auto">
+            <div class="h-20" id="item" onmouseenter="entra(1)" onmouseleave="sai(1)">
+                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
+                <p class="text-gray-100 text-center">Tela de login</p>
+                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra1"></div>
+            </div>
+            <div class="h-20" id="item" onmouseenter="entra(2)" onmouseleave="sai(2)">
+                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
+                <p class="text-gray-100 text-center">Tela de login</p>
+                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra2"></div>
+            </div>
+            <div class="h-20" id="item" onmouseenter="entra(3)" onmouseleave="sai(3)">
+                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
+                <p class="text-gray-100 text-center">Tela de login</p>
+                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra3"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // item = document.getElementById("item");
+        // item.addEventListener("mouseover", () => {
+        //     document.getElementById("barra").className = "w-20 h-0.5 bg-white transition-all mx-auto"
+        //     console.log("entra")
+        // })
+        // item.addEventListener("mouseout", () => {
+        //     document.getElementById("barra").className = "w-0 h-0.5 bg-white transition-all mx-auto"
+        //     console.log('sai')
+        // })
+        function entra(i) {
+            document.getElementById("barra"+i).className = "w-20 h-0.5 bg-white transition-all mx-auto"
+            console.log("entra")
+        }
+        function sai(i) {
+            document.getElementById("barra"+i).className = "w-0 h-0.5 bg-white transition-all mx-auto"
+            console.log('sai')
+        }
+    </script>
 </body>
 </html>
