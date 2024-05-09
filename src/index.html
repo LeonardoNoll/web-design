@@ -7,49 +7,36 @@
     <link href="./output.css" rel="stylesheet">
     <title>Tailwind CSS</title>
 </head>
-<body class="bg-fixed" style="background-image: url(/assets/diamond-sunset.png);">
-    <main class="max-w-xl h-96 rounded-2xl mx-auto mt-7 border-2">
-        <div class="bg-slate-800 w-2/3 p-2 flex flex-col justify-center items-center gap-1 mx-auto rounded-md">
+<body class="bg-cover" style="background-image: url(/assets/diamond-sunset.png);">
+    <main class="w-screen">
+        <div class="title-card">
             <img src="/assets/Tailwind CSS.png" alt="Logo Tailwind Css" class="h-20">
-            <h1 class="text-gray-100 font-extrabold text-xl">Tailwind CSS</h1>
-            <h2 class="text-gray-100 font-normal text-sm">facilitação da construção de websites</h2>
+            <h1 class="text-gray-100 font-extrabold text-4xl">Tailwind CSS</h1>
+            <h2 class="text-gray-100 font-normal text-xl">facilitação da construção de websites</h2>
         </div>
-        <div class="w-max h-52 flex justify-center gap-4 items-center border-2 mx-auto">
-            <div class="h-20" id="item" onmouseenter="entra(1)" onmouseleave="sai(1)">
-                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
-                <p class="text-gray-100 text-center">Tela de login</p>
-                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra1"></div>
-            </div>
-            <div class="h-20" id="item" onmouseenter="entra(2)" onmouseleave="sai(2)">
-                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
-                <p class="text-gray-100 text-center">Tela de login</p>
-                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra2"></div>
-            </div>
-            <div class="h-20" id="item" onmouseenter="entra(3)" onmouseleave="sai(3)">
-                <img src="/assets/print1.png" alt="" class="h-20 rounded-md my-auto">
-                <p class="text-gray-100 text-center">Tela de login</p>
-                <div class="w-0 h-0.5 bg-white transition-all mx-auto" id="barra3"></div>
-            </div>
+        <div class="w-fit px-10 py-12 flex justify-center gap-6 items-center bg-slate-800 mx-auto mt-6 rounded-md">
+            <a href="login.html">
+                <div class="h-fit group hover:scale-110 transition-all">
+                    <img src="/assets/tela-login.png" alt="" class="h-40 rounded-md my-auto">
+                    <p class="text-gray-100 text-center text-xl my-2">Tela de login</p>
+                    <div class="w-0 h-0.5 bg-white transition-all mx-auto group-hover:w-20"></div>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="h-fit group hover:scale-110 transition-all" >
+                    <img src="/assets/print1.png" alt="" class="h-40 rounded-md my-auto">
+                    <p class="text-gray-100 text-center text-xl my-2">Tela de login</p>
+                    <div class="w-0 h-0.5 bg-white transition-all mx-auto group-hover:w-20"></div>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="h-fit group hover:scale-110 transition-all" >
+                    <img src="/assets/print1.png" alt="" class="h-40 rounded-md my-auto">
+                    <p class="text-gray-100 text-center text-xl my-2">Tela de login</p>
+                    <div class="w-0 h-0.5 bg-white transition-all mx-auto group-hover:w-max"></div>
+                </div>
+            </a>
         </div>
     </main>
-    <script>
-        // item = document.getElementById("item");
-        // item.addEventListener("mouseover", () => {
-        //     document.getElementById("barra").className = "w-20 h-0.5 bg-white transition-all mx-auto"
-        //     console.log("entra")
-        // })
-        // item.addEventListener("mouseout", () => {
-        //     document.getElementById("barra").className = "w-0 h-0.5 bg-white transition-all mx-auto"
-        //     console.log('sai')
-        // })
-        function entra(i) {
-            document.getElementById("barra"+i).className = "w-20 h-0.5 bg-white transition-all mx-auto"
-            console.log("entra")
-        }
-        function sai(i) {
-            document.getElementById("barra"+i).className = "w-0 h-0.5 bg-white transition-all mx-auto"
-            console.log('sai')
-        }
-    </script>
 </body>
 </html>

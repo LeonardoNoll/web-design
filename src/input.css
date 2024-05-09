@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .title-card {
+        @apply bg-slate-800 w-2/3 p-2 flex flex-col justify-center items-center gap-1 mx-auto rounded-md mt-6;
+    }
+}

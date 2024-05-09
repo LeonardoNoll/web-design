@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./output.css" rel="stylesheet">
+    <title>Login Tailwind</title>
+</head>
+<body class="bg-cover" style="background-image: url(/assets/diamond-sunset.png);">
+    <main class="bg-slate-800 w-fit mx-auto mt-20 p-10 shadow-2xl">
+        <div class="mx-auto w-fit">
+            <img src="/assets/imagem-do-usuario-com-fundo-preto.png" alt="" class="mx-auto">
+            <h1 class="text-gray-100 font-extrabold text-3xl text-center">Bem-vindo!</h1>
+        </div>
+        <form action="login.html" method="get" class="w-fit h-fit p-5 mx-auto text-lg">
+            <label for="usuario" class="block text-gray-100">Usuário</label>
+            <input type="text" name="usuario" id="usuario" class="bg-neutral-900 focus:bg-neutral-950 focus:outline-none border-b-[1px] text-white mb-5 px-2 py-1">
+            <label for="senha" class="block text-gray-100">Senha</label>
+            <input type="password" name="senha" id="senha" class="bg-neutral-900 focus:bg-neutral-950 focus:outline-none border-b-[1px] text-white mb-5 block px-2 py-1">
+            <button type="submit" class="bg-blue-800 font-bold text-white rounded-md py-1 px-2 block mb-2 focus:bg-blue-950">Entrar</button>
+            <a href="login.html" class="text-white font-semibold">Ainda não possui conta?</a>
+        </form>
+    </main>
+</body>
+</html>
