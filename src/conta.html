@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./output.css" rel="stylesheet">
+    <title>Conta</title>
+</head>
+<body class="bg-gray-300">
+    <main class="w-9/12 h-fit bg-white rounded-md mx-auto mt-10 p-5">
+        <form action="conta.html" method="get" id="form" class="size-full">
+            <h1 class="font-medium text-2xl">Cadastro</h1>
+            <div class="grid grid-cols-3 gap-5 w-full p-4">
+                <div class="camp-wrap">
+                    <label for="email" class="camp-name">Email</label>
+                    <input type="email" name="email" id="email" class="camp">
+                </div>
+                <div class="camp-wrap">
+                    <label for="nome" class="camp-name">Nome</label>
+                    <input type="text" name="nome" id="nome" class="camp">
+                </div>
+                <div class="camp-wrap">
+                    <label for="nascimento" class="camp-name">Data de nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" class="camp">
+                </div>
+                <div class="camp-wrap">
+                    <label for="celular" class="camp-name">Celular</label>
+                    <input type="tel" name="celular" id="celular" class="camp">
+                </div>
+                <div class="camp-wrap">
+                    <label for="cpf" class="camp-name">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="camp">
+                </div>
+                <div class="camp-wrap">
+                    <label for="rg" class="camp-name">RG</label>
+                    <input type="text" name="rg" id="rg" class="camp">
+                </div>
+            </div>
+            <input type="submit" value="Salvar" class="bg-orange-400 text-white w-24 h-12 rounded-md ml-4 focus:font-semibold focus:bg-orange-600">
+        </form>
+    </main>
+
+    <!-- <script>
+        const nome = document.getElementById('nome');
+        const email = document.getElementById('email');
+        const nascimento = document.getElementById('nascimento');
+        const celular = document.getElementById('celular');
+        const cpf = document.getElementById('cpf');
+        const rg = document.getElementById('rg');
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = {
+                nome: nome.value,
+                email: email.value,
+                nascimento: nascimento.value,
+                celular: celular.value,
+                cpf: cpf.value,
+                rg: rg.value
+            };
+            console.log(data);
+        });
+    </script> -->
+</body>
+</html>

@@ -6,4 +6,16 @@
     .title-card {
         @apply bg-slate-800 w-2/3 p-2 flex flex-col justify-center items-center gap-1 mx-auto rounded-md mt-6;
     }
+
+    .camp-wrap {
+        @apply w-full h-fit lg:col-span-1  col-span-3;
+    }
+
+    .camp-name {
+        @apply text-base font-semibold block;
+    }
+
+    .camp{
+        @apply text-sm font-light block border border-gray-300 rounded-md p-2 w-full outline-none focus:border-orange-500 focus:font-normal transition-all;
+    }
 }
