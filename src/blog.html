@@ -6,26 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./output.css" rel="stylesheet">
     <title>Blog</title>
+    <style>
+        body {
+            background-color: #DFDBE5;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
 </head>
-<body>
-    <nav class="w-full h-20 bg-black block">
-        <ul class="flex justify-center items-center h-full">
-            <li class="mx-4">
-                <a href="index.html" class="text-white">Home</a>
-            </li>
-            <li class="mx-4">
-                <a href="login.html" class="text-white">Login</a>
-            </li>
-            <li class="mx-4">
-                <a href="conta.html" class="text-white">Conta</a>
-            </li>
-            <li class="mx-4">
-                <a href="blog.html" class="text-white">Blog</a>
-            </li>
-        </ul>
+<body>  
+    <nav class="w-full h-20 bg-black block text-white">
+        <div class="flex justify-center items-center h-full gap-8">
+            <a href="index.html" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+                    </svg>
+                    <p class="font-medium">Home</p>
+            </a>
+            <a href="login.html" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                  </svg>
+                <p class="font-medium">Login</p>
+            </a>
+            <a href="conta.html" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                  </svg>                  
+                </svg>
+                <p class="font-medium">Conta</p>
+            </a>
+            <a href="blog.html" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                  </svg>                  
+                <p class="font-medium">Blog</p>
+            </a>
+        </div>
     </nav>
     <div class="grid grid-cols-4">    
-        <main class="md:col-span-3 col-span-4 md:border-r shadow-md">
+        <main class="md:col-span-3 col-span-4 shadow-md bg-white"> <!--artigo principal-->
             <div class="w-full h-64 bg-cover align-middle" style="background-image: url(https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
             </div>
             <div class="w-9/12 mx-auto mt-10">
@@ -46,30 +65,69 @@
                     <p class="text-lg mt-4">Duis bibendum, tellus tristique aliquam faucibus, dolor ligula gravida elit, id venenatis leo enim a enim. Etiam nec eros at lacus consectetur porta quis eget quam. Donec id rhoncus arcu. Proin leo nisl, commodo sit amet convallis non, vulputate at urna. Duis quis nulla nunc. Sed feugiat enim ut nunc fermentum iaculis. Nam faucibus, erat eu cursus interdum, augue elit gravida tellus, quis condimentum magna nulla vel massa. Proin nibh sem, sagittis quis fringilla sed, ultricies ut nibh. Nulla pulvinar mattis nisl, accumsan pulvinar velit laoreet in. Vivamus felis odio, auctor vitae lacinia ac, tincidunt pharetra lectus. Aliquam efficitur augue ac enim rutrum, quis rhoncus nisi auctor. Integer ante massa, dictum nec bibendum ac, vulputate a ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc vestibulum dictum arcu ut lacinia. Vivamus commodo mi ac metus gravida, nec iaculis mi porttitor.</p>
                 </article>
             </div>
-        </main>
-        <aside class="p-3 md:col-span-1 h-fit col-span-4 ">
-            <div class="w-full border sticky rounded-md shadow-md pb-5 overflow-hidden">
-                <span class="w-full">
+        </main> <!--artigo principal-->
+        <aside class="p-3 md:col-span-1 h-fit col-span-4">
+            <div class="w-full sticky rounded-md shadow-md pb-5 overflow-hidden mb-4 bg-white"> <!--outros artigos-->
+                <span class="w-full h-fit">
                     <input type="text" class="w-full p-2 bg-black text-white" placeholder="Pesquisar">
                 </span>
-                <span>
-                    <h2 class="text-2xl font-bold py-1 px-4">Categorias</h2>
-                    <ul class="pl-8">
-                        <li class="text-lg hover:list-disc">Desenvolvimento</li>
-                        <li class="text-lg hover:list-disc">Design</li>
-                        <li class="text-lg hover:list-disc">Marketing</li>
-                        <li class="text-lg hover:list-disc">Tecnologia</li>
+                <span class="mb-4 h-fit">
+                    <h2 class="text-2xl font-bold py-1 px-4 underline">Categorias</h2>
+                    <ul class="pl-10">
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Desenvolvimento</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Design</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Marketing</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Tecnologia</li>
+                        </a>
                     </ul>
                 </span>
                 <span>
-                    <h2 class="text-2xl font-bold py-1 px-4">Posts recentes</h2>
-                    <ul class="pl-8">
-                        <li class="text-lg hover:list-disc">Como criar o seu blog?</li>
-                        <li class="text-lg hover:list-disc">Como criar o seu blog?</li>
-                        <li class="text-lg hover:list-disc">Como criar o seu blog?</li>
-                        <li class="text-lg hover:list-disc">Como criar o seu blog?</li>
+                    <h2 class="text-2xl font-bold py-1 px-4 underline">Posts recentes</h2>
+                    <ul class="pl-10">
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Como criar o seu blog?</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Como criar o seu blog?</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Como criar o seu blog?</li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="text-lg hover:list-disc hover:font-medium">Como criar o seu blog?</li>
+                        </a>
                     </ul>
                 </span>
+            </div> <!--outros artigos-->
+            <div class="border w-full flex items-center justify-center gap-3"> <!--redes-->
+                <a href="" class="opacity-70 hover:opacity-100 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" class="h-10 w-10">
+                        <g>
+                            <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
+                        </g>
+                    </svg>
+                </a>
+                <a href="" class="opacity-70 hover:opacity-100 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" class="h-10 w-10">
+                        <g>
+                            <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
+                            <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
+                            <circle cx="18.406" cy="5.594" r="1.44"/>
+                        </g>
+                        </svg>
+                </a>
+                <a href="" class="opacity-70 hover:opacity-100 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" class="h-10 w-10">
+                        <path id="Logo_00000038394049246713568260000012923108920998390947_" d="M21.543,7.104c0.014,0.211,0.014,0.423,0.014,0.636  c0,6.507-4.954,14.01-14.01,14.01v-0.004C4.872,21.75,2.252,20.984,0,19.539c0.389,0.047,0.78,0.07,1.172,0.071  c2.218,0.002,4.372-0.742,6.115-2.112c-2.107-0.04-3.955-1.414-4.6-3.42c0.738,0.142,1.498,0.113,2.223-0.084  c-2.298-0.464-3.95-2.483-3.95-4.827c0-0.021,0-0.042,0-0.062c0.685,0.382,1.451,0.593,2.235,0.616  C1.031,8.276,0.363,5.398,1.67,3.148c2.5,3.076,6.189,4.946,10.148,5.145c-0.397-1.71,0.146-3.502,1.424-4.705  c1.983-1.865,5.102-1.769,6.967,0.214c1.103-0.217,2.16-0.622,3.127-1.195c-0.368,1.14-1.137,2.108-2.165,2.724  C22.148,5.214,23.101,4.953,24,4.555C23.339,5.544,22.507,6.407,21.543,7.104z"/>
+                    </svg>
+                </a>
             </div>
         </aside>
     </div>
