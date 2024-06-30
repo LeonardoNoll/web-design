@@ -3,12 +3,27 @@
 @tailwind utilities;
 
 @layer components {
+    .title-wrapper {
+        @apply relative bg-gradient-to-b from-blue-500 to-blue-400 rounded-2xl overflow-hidden;
+    }
+
+    .title-wrapper::before {
+        background: conic-gradient(
+            rgba(255, 0, 0) 0deg,
+            rgba(188, 255, 3) 90deg,
+            rgba(1, 5, 255) 180deg,
+            rgba(255, 0, 0) 360deg
+        ); 
+        
+        @apply h-[225%] w-[150%] left-[-25%] top-[-25%] absolute animate-border-spin content-[''];
+    }
+
     .title-card {
-        @apply bg-none border w-fit p-5 flex flex-col justify-center items-center gap-1 mx-auto rounded-md mt-6;
+        @apply bg-black absolute w-[calc(100%-6px)] h-[calc(100%-6px)] top-[3px] left-[3px];
     }
 
     .camp-wrap {
-        @apply w-full h-fit lg:col-span-1  col-span-3;
+        @apply w-full h-fit lg:col-span-1 col-span-3;
     }
 
     .camp-name {
